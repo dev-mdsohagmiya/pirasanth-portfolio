@@ -1,0 +1,62 @@
+export default [
+  {
+    _key: '14e4ca4505cc',
+    altText: 'cypress',
+    imgSrc: 'simple-icons:cypress',
+    order: 3,
+    title: 'Cypress.io',
+  },
+  {
+    _key: '995259941e62',
+    altText: 'webdriver.io',
+    imgSrc: 'simple-icons:webdriverio',
+    order: 7,
+    title: 'Webdriver.io',
+  },
+  {
+    _key: 'e069ea89850d',
+    altText: 'cucumber.io',
+    imgSrc: 'file-icons:cucumber',
+    order: 4,
+    title: 'Cucumber.io',
+  },
+  {
+    _key: '978d61eaf538',
+    altText: 'k6.io',
+    imgSrc: 'simple-icons:k6',
+    order: 6,
+    title: 'K6.io',
+  },
+  {
+    _key: '8653a38a414f',
+    altText: 'appium',
+    imgSrc: 'logos:appium',
+    order: 8,
+    title: 'Appium',
+  },
+  {
+    _key: '7980d52e928b',
+    altText: 'selenium',
+    imgSrc: 'simple-icons:selenium',
+    order: 9,
+    title: 'Selenium',
+  },
+  {
+    _key: '2685c74180e5',
+    altText: 'react.js',
+    imgSrc: 'akar-icons:react-fill',
+    title: 'React JS',
+  },
+  {
+    _key: '9759b61f42fa',
+    altText: 'node.js',
+    imgSrc: 'fa-brands:node-js',
+    title: 'Node.js',
+  },
+  {
+    _key: 'ee4b9a110441',
+    altText: 'puppeteer',
+    imgSrc: 'simple-icons:puppeteer',
+    title: 'Puppeteer',
+  },
+];
