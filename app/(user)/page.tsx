@@ -25,7 +25,7 @@ function HomePage() {
         </div>
       </section> */}
       <Hero />
-      <Skills skills={skills} />
+      {/* <Skills skills={skills} /> */}
       {/* <About /> */}
     </div>
   );
