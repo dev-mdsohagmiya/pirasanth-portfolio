@@ -9,9 +9,7 @@ type Props = {
     slug: string;
   };
 };
-
-async function Post({ params: { slug } }: Props) {
-  const query = groq`
+const query = groq`
     *[_type=='post' && slug.current == $slug][0]
     {
         ...,
@@ -19,9 +17,8 @@ async function Post({ params: { slug } }: Props) {
         categories[]->
     }
     `;
-
+async function Post({ params: { slug } }: Props) {
   const post: Post = await client.fetch(query, { slug });
-
   return (
     <article className="px-10 pb-28">
       <section className="space-y-2 border border-[#F7AB0A] text-white">

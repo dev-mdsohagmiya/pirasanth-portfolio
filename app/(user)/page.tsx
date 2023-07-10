@@ -12,7 +12,7 @@ import Hero from '../../sections/hero';
 function HomePage() {
   return (
     <div className="justify-center mx-8 ">
-      <section id="about" className="pt-20 pb-10  ">
+      {/* <section id="about" className="pt-20 pb-10  ">
         <div className="md:grid gap-4 grid-cols-2 md:right-0 md:w-screen md:absolute">
           <div className="relative ">
             <div className="bg-secondary-shaded rounded-lg ">
@@ -23,7 +23,7 @@ function HomePage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <Hero />
       <Skills skills={skills} />
       {/* <About /> */}
