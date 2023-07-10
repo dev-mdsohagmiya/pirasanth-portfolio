@@ -3,17 +3,17 @@ import Image from 'next/image';
 import Header from 'assets/Skills.png';
 import { Icon } from '@iconify/react';
 import { useGlitch } from 'react-powerglitch';
-type Props = {
-  skills: [
-    {
-      _key: string;
-      altText: string;
-      imgSrc: string;
-      order: number;
-      title: string;
-    }
-  ];
-};
+
+interface Skill {
+  _key: string;
+  altText: string;
+  imgSrc: string;
+  order?: number;
+  title: string;
+}
+interface Props {
+  skills: Skill[];
+}
 
 function Skills({ skills }: Props) {
   const glitch = useGlitch();
