@@ -24,7 +24,8 @@
     "react-powerglitch": "^1.0.0",
     "sanity": "^3.0.0",
     "sanity-plugin-iframe-pane": "^2.3.0",
-    "styled-components": "^5.2.0"
+    "styled-components": "^5.2.0",
+    "vercel": "^31.0.1"
   },
   "devDependencies": {
     "@iconify/react": "^4.1.0",
