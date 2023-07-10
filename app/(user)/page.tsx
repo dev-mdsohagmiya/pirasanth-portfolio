@@ -8,9 +8,8 @@ import { useGlitch } from 'react-powerglitch';
 import Skills from '../../sections/skills';
 import skills from '../../data/skills';
 import Hero from '../../sections/hero';
-import { NextPage } from 'next';
 
-const HomePage: NextPage = () => {
+function HomePage() {
   return (
     <div className="justify-center mx-8 ">
       {/* <section id="about" className="pt-20 pb-10  ">
@@ -26,10 +25,10 @@ const HomePage: NextPage = () => {
         </div>
       </section> */}
       <Hero />
-      {/* <Skills skills={skills} /> */}
+      <Skills skills={skills} />
       {/* <About /> */}
     </div>
   );
-};
+}
 
 export default HomePage;
