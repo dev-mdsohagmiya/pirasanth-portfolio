@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: npm install
-      - run: npm vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
-      - run: npm vercel build --token=${{ secrets.VERCEL_TOKEN }}
+      - run: vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
+      - run: vercel build --token=${{ secrets.VERCEL_TOKEN }}
       - id: deploy
-        run: echo "::set-output name=url::$(npm vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }})"
+        run: echo "::set-output name=url::$(vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }})"
