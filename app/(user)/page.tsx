@@ -9,7 +9,7 @@ import Skills from '../../sections/skills';
 import skills from '../../data/skills';
 import Hero from '../../sections/hero';
 
-export default function HomePage() {
+function HomePage() {
   return (
     <div className="justify-center mx-8 ">
       {/* <section id="about" className="pt-20 pb-10  ">
@@ -30,3 +30,5 @@ export default function HomePage() {
     </div>
   );
 }
+
+export default HomePage;

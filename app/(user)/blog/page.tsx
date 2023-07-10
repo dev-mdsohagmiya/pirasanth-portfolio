@@ -5,6 +5,7 @@ import { client } from '../../../lib/sanity.client';
 import PreviewSuspense from '../../../components/PreviewSuspense';
 import PreviewBlogList from '../../../components/PreviewBlogList';
 import BlogList from '../../../components/BlogList';
+
 const query = groq`
 *[_type=='post'] {
     ...,
@@ -13,8 +14,25 @@ const query = groq`
 } | order(_createdAt desc)
 `;
 
-export async function HomePage() {
+export async function getStaticProps() {
   if (previewData()) {
+    return {
+      props: {
+        isPreview: true,
+      },
+    };
+  }
+  const posts = await client.fetch(query);
+  return {
+    props: {
+      isPreview: false,
+      posts,
+    },
+  };
+}
+
+function Home({ isPreview, posts }) {
+  if (isPreview) {
     return (
       <PreviewSuspense
         fallback={
@@ -29,8 +47,7 @@ export async function HomePage() {
       </PreviewSuspense>
     );
   }
-  const posts = await client.fetch(query);
   return <BlogList posts={posts} />;
 }
 
-export default HomePage;
+export default Home;
