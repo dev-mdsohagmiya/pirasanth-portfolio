@@ -30,7 +30,7 @@ const AnimatedHeroText = () => {
           </div>
           <p className="text-[20px] md:text-[28px] lg:text-[32px] pt-6 lg:pt-14 text-white">
             I'm <span className="text-primary">Pirasanth</span> - but call me
-            <span className="text-primary">
+            <span className="text-primary ml-2">
               PJ<span className="text-white">.</span>
             </span>
           </p>
