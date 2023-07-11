@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
 function Hero() {
   return (
-    <section id="hero">
+    <section id="hero text">
       <div className="md:grid gap-4 grid-cols-2 md:right-0 md:w-screen md:absolute">
         <div className="relative ">
           <div className="bg-secondary-shaded rounded-lg ">
