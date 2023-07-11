@@ -1,24 +1,27 @@
-import React from 'react';
-import Image from 'next/image';
-import Header from 'assets/Skills.png';
-import { Icon } from '@iconify/react';
-import { useGlitch } from 'react-powerglitch';
-
-interface Skill {
-  _key: string;
-  altText: string;
-  imgSrc: string;
-  order?: number;
-  title: string;
-}
-interface Props {
-  skills: Skill[];
-}
+import React from "react";
+import Image from "next/image";
+import Header from "assets/Skills.png";
+import { Icon } from "@iconify/react";
+import { useGlitch } from "react-powerglitch";
+type Props = {
+  skills: [
+    {
+      _key: string;
+      altText: string;
+      imgSrc: string;
+      order: number;
+      title: string;
+    }
+  ];
+};
 
 function Skills({ skills }: Props) {
   const glitch = useGlitch();
   return (
-    <section id="skills" className="bg-secondary-shaded -mx-8 relative top-24">
+    <section
+      id="skills"
+      className="bg-secondary-shaded md-mx-0 -mx-10 relative top-24"
+    >
       <div className="max-w-7xl mx-auto">
         <Image
           className="md:ml-12 relative -top-20 max-w-7xl mx-auto"

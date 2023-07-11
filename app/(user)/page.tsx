@@ -1,17 +1,20 @@
-'use client';
-import { previewData } from 'next/headers';
-import Image from 'next/image';
-import Header from 'assets/Skills.png';
-import About from '../../sections/about';
-import '../../styles/globals.css';
-import { useGlitch } from 'react-powerglitch';
-import Skills from '../../sections/skills';
-import skills from '../../data/skills';
-import Hero from '../../sections/hero';
+"use client";
+import { previewData } from "next/headers";
+import Image from "next/image";
+
+import About from "../../sections/about";
+import "../../styles/globals.css";
+import { useGlitch } from "react-powerglitch";
+import Skills from "../../sections/skills";
+import skills from "../../data/skills";
+import Hero from "../../sections/hero";
+import Footer from "../../sections/footer";
+
+import Header from "../../components/Header";
 
 function HomePage() {
   return (
-    <div className="justify-center mx-8 ">
+    <div className=" mx-10 justify-center ">
       {/* <section id="about" className="pt-20 pb-10  ">
         <div className="md:grid gap-4 grid-cols-2 md:right-0 md:w-screen md:absolute">
           <div className="relative ">
@@ -24,9 +27,22 @@ function HomePage() {
           </div>
         </div>
       </section> */}
+      <div className={`bg sticky top-0 z-20  bg-secondary   -mx-10`}>
+        <Header />
+      </div>
       <Hero />
-      <Skills skills={skills} />
-      {/* <About /> */}
+
+      <div className="md:-mx-10 mt-[120px] md:mt-[650px] md:h-[800px]  md:overflow-hidden">
+        <About />
+      </div>
+
+      <div className="mt-[10px] md:mt-0 ">
+        <Skills skills={skills} />
+      </div>
+
+      <div className="mt-[120px]">
+        <Footer />
+      </div>
     </div>
   );
 }

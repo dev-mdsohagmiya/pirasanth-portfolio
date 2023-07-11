@@ -1,7 +1,7 @@
-import React from 'react';
-import Image from 'next/image';
-import { useGlitch } from 'react-powerglitch';
-import Header from '../assets/Skills.png';
+import React from "react";
+import Image from "next/image";
+import { useGlitch } from "react-powerglitch";
+import Header from "../assets/Skills.png";
 type Props = {
   skills: [
     {

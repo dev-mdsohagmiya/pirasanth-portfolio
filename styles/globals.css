@@ -2,10 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-path {
-    fill:#FFC35B
+#skills path {
+  fill: #ffc35b;
 }
 
-html,body {
-    font-family: 'Montserrat';
+html,
+body {
+  font-family: "Montserrat";
+}
+
+.ow {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
 }
