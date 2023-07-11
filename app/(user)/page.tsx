@@ -8,7 +8,6 @@ import { useGlitch } from "react-powerglitch";
 import Skills from "../../sections/skills";
 import skills from "../../data/skills";
 import Hero from "../../sections/hero";
-import Footer from "../../sections/footer";
 
 import Header from "../../components/Header";
 
@@ -32,17 +31,17 @@ function HomePage() {
       </div>
       <Hero />
 
-      <div className="md:-mx-10 mt-[120px] md:mt-[650px] md:h-[800px]  md:overflow-hidden">
+      {/* <div className="md:-mx-10 mt-[120px] md:mt-[650px] md:h-[800px]  md:overflow-hidden">
         <About />
-      </div>
+      </div> */}
 
-      <div className="mt-[10px] md:mt-0 ">
+      <div className="md:-mx-10 mt-[80px] md:mt-[650px]  md:overflow-hidden">
         <Skills skills={skills} />
       </div>
 
-      <div className="mt-[120px]">
+      {/* <div className="mt-[120px]">
         <Footer />
-      </div>
+      </div> */}
     </div>
   );
 }
